@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="en" class="box-border h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/dist/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,700;0,800;0,900;1,300;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleanm.css" />
+    <title>products-Us</title>
+  </head>
+  <body class="relative min-h-screen flex flex-col scroll-smooth bg-[#DDDDDD]">
+    <div id="navWrapper" class="w-full bg-cover bg-no-repeat bg-left pt-2">
+      <nav
+        class="w-full flex flex-row justify-between items-center mx-auto p-4 lg:w-3/4 lg:bg-gray-500 lg:bg-opacity-60 lg:rounded-md"
+      >
+        <div id="home" class="bg-gray-300 bg-opacity-60 py-1 px-2 rounded-md">
+          <a href="index.html">
+            <h1
+              class="font-Kanit text-xl text-[#2a2a2a] text-center m-0 lg:text-2xl"
+            >
+              Pixelgraphy
+            </h1>
+          </a>
+        </div>
+        <div class="relative">
+          <div
+            class="hidden text-[#404040] font-Kanit text-lg text-center bg-gray-300 bg-opacity-40 py-1 rounded-md lg:flex"
+          >
+            <ul class="flex flex-row item-center">
+              <li>
+                <a
+                  class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
+                  href="products.html"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
+                  href="community.html"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a
+                  class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
+                  href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
+                  href="blogs.html"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
+                  href="about.html"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="bg-gray-300 bg-opacity-40 py-1 px-2 rounded-md lg:hidden">
+            <a id="humb-menu" class="cursor-pointer"
+              ><img class="w-6" src="./img/icons/menu.png" alt="menu-icon"
+            /></a>
+            <a id="humb-menu-close"
+              ><img
+                id="closeIcon"
+                class="w-6 hidden"
+                src="./img/icons/close.png"
+                alt="close-menu-icon"
+            /></a>
+          </div>
+          <div
+            id="mobile-nav-menu"
+            class="hidden absolute items-center justify-center right-0 w-64 bg-gray-400 rounded-md py-4 pl-10"
+          >
+            <ul class="w-full">
+              <li>
+                <a
+                  class="cursor-pointer transition-all ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <hr class="bg-[#CBD9B4] w-3/4" />
+              <li class="pt-3 w-ful">
+                <a
+                  class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
+                  href="products.html"
+                  >Products</a
+                >
+              </li>
+              <hr class="bg-[#CBD9B4] w-3/4" />
+              <li class="pt-3 w-ful">
+                <a
+                  class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
+                  href="community.html"
+                  >Community</a
+                >
+              </li>
+              <hr class="bg-[#CBD9B4] w-3/4" />
+              <li class="pt-3 w-ful">
+                <a
+                  class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
+                  href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <hr class="bg-[#CBD9B4] w-3/4" />
+              <li class="pt-3 w-ful">
+                <a
+                  class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
+                  href="blogs.html"
+                  >Blogs</a
+                >
+              </li>
+              <hr class="bg-[#CBD9B4] w-3/4" />
+              <li class="pt-3 w-ful">
+                <a
+                  class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
+                  href="about.html"
+                  >About us</a
+                >
+              </li>
+              <hr class="bg-[#CBD9B4] w-3/4" />
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <header class="px-2 mt-10 max-w-6xl mx-auto">
+      <div class="flex justify-center max-h-52 relative">
+        <h2
+          class="text-center w-[80%] absolute bg-orange-700 bg-opacity-80 px-4 py-2 font-Kanit font-bold tracking-widest text-gray-300 subpixel-antialiased rounded-sm bottom-2 capitalize md:text-2xl"
+        >
+          Power Your Skills With the right gears
+        </h2>
+        <img
+          class="object-cover w-5/6 rounded-md"
+          src="/dist/img/Products/products.jpg"
+          alt=""
+        />
+      </div>
+    </header>
+    <section
+      class="bg-gray-500 py-4 w-5/6 pl-4 mt-10 max-w-6xl mx-auto rounded-md drop-shadow-md"
+    >
+      <h1
+        class="text-gray-300 text-opacity-90 subpixel-antialiased capitalize font-Kanit tracking-widest font-semibold text-xl md:text-3xl"
+      >
+        Pixelgraphy Products
+      </h1>
+    </section>
+
+    <main
+      class="grid grid-cols-1 justify-items-center mx-auto items-center md:grid-cols-3 max-w-6xl"
+    >
+      <!-- -->
+      <!-- NOTE First Card Container -->
+      <div
+        class="flex flex-col justify-center max-w-lg items-center mt-10 left-enter-animate"
+      >
+        <div class="w-5/6 rounded-md">
+          <a href="">
+            <img
+              class="object-contain rounded-md"
+              src="/dist/img/Products/Gear-(1).jpg"
+              alt="product-image"
+            />
+          </a>
+        </div>
+        <!-- NOTE Card Title -->
+        <!--  -->
+        <div class="w-5/6 -mt-10">
+          <h2
+            class="bg-gray-400 rounded-tr-md text-xl font-Kanit font-medium px-2 py-1 w-fit capitalize"
+          >
+            Lenses Bag
+          </h2>
+          <hr class="border-gray-400 border-2 rounded-3xl" />
+          <p class="px-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum,
+            dolorum fugit nostrum ratione voluptatum ullam. Ipsam recusandae
+            voluptate voluptatibus magni.
+          </p>
+        </div>
+        <!--  -->
+        <!--NOTE Price Rating Availability  -->
+
+        <div
+          class="flex flex-row justify-between items-center w-5/6 mx-auto bg-gray-400"
+        >
+          <div class="px-2 rounded-sm drop-shadow-sm">
+            <p class="font-Kanit font-thin">
+              Price: <span class="font-medium"> 55 $</span>
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center px-2 py-1 rounded-sm drop-shadow-sm"
+          >
+            <div class="flex flex-row justify-end">
+              <p class="flex text-xs pr-2">Status:</p>
+              <span
+                ><img
+                  class="w-4"
+                  src="/dist/img/Products/instock.svg"
+                  alt="in-stock-icon"
+              /></span>
+            </div>
+            <div class="flex flex-row justify-center items-center pt-1">
+              <p class="flex text-xs pr-2">Rating:</p>
+              <div class="flex justify-center items-center">
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="products.html" class="flex justify-center items-center mt-2">
+            <button
+              id="productsBtn"
+              class="flex justify-center items-center text-[#f4eded] bg-gray-600 bg-opacity-80 text-lg font-bold py-1 px-2 rounded-lg border-2 border-[#7f8fc8] transition ease-in-out duration-300 hover:bg-[#CFA991] hover:text-gray-900"
+            >
+              Buy Now
+              <img
+                src="./img/shopping-cart.png"
+                class="w-8 pl-2"
+                alt="cart-icon"
+              />
+            </button>
+          </a>
+        </div>
+        <hr
+          class="mt-2 w-2/3 mx-auto border-gray-400 border-2 rounded-3xl border-opacity-30"
+        />
+      </div>
+
+      <!-- NOTE Second Card  -->
+      <!--  -->
+      <div
+        class="flex flex-col justify-center max-w-lg items-center mt-10 left-enter-animate"
+      >
+        <div class="w-5/6 rounded-md bg-gray-400">
+          <a href="">
+            <img
+              class="object-contain rounded-md"
+              src="/dist/img/Products/Gear-(2).jpg"
+              alt="product-image"
+            />
+          </a>
+        </div>
+        <!-- NOTE Card Title -->
+        <!--  -->
+        <div class="w-5/6 -mt-10">
+          <h2
+            class="bg-gray-400 rounded-tr-md text-xl font-Kanit font-medium px-2 py-1 w-fit capitalize"
+          >
+            Extended Screen
+          </h2>
+          <hr class="border-gray-400 border-2 rounded-3xl" />
+          <p class="px-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum,
+            dolorum fugit nostrum ratione voluptatum ullam. Ipsam recusandae
+            voluptate voluptatibus magni.
+          </p>
+        </div>
+        <!--  -->
+        <!--NOTE Price Rating Availability  -->
+
+        <div
+          class="flex flex-row justify-between items-center w-5/6 mx-auto bg-gray-400"
+        >
+          <div class="px-2 rounded-sm drop-shadow-sm">
+            <p class="font-Kanit font-thin">
+              Price: <span class="font-medium"> 69 $</span>
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center px-2 py-1 rounded-sm drop-shadow-sm"
+          >
+            <div class="flex flex-row justify-end">
+              <p class="flex text-xs pr-2">Status:</p>
+              <span
+                ><img
+                  class="w-4"
+                  src="/dist/img/Products/instock.svg"
+                  alt="in-stock-icon"
+              /></span>
+            </div>
+            <div class="flex flex-row justify-center items-center pt-1">
+              <p class="flex text-xs pr-2">Rating:</p>
+              <div class="flex justify-center items-center">
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="" class="flex justify-center items-center mt-2">
+            <button
+              id="productsBtn"
+              class="flex justify-center items-center text-[#f4eded] bg-gray-600 bg-opacity-80 text-lg font-bold py-1 px-2 rounded-lg border-2 border-[#7f8fc8] transition ease-in-out duration-300 hover:bg-[#CFA991] hover:text-gray-900"
+            >
+              Buy Now
+              <img
+                src="./img/shopping-cart.png"
+                class="w-8 pl-2"
+                alt="cart-icon"
+              />
+            </button>
+          </a>
+        </div>
+        <hr
+          class="mt-2 w-2/3 mx-auto border-gray-400 border-2 rounded-3xl border-opacity-30"
+        />
+      </div>
+
+      <!-- NOTE Third Card  -->
+      <!--  -->
+      <div
+        class="flex flex-col justify-center max-w-lg items-center mt-10 left-enter-animate"
+      >
+        <div class="w-5/6 rounded-md bg-gray-400">
+          <a href="">
+            <img
+              class="object-contain rounded-md"
+              src="/dist/img/Products/Gear-(3).jpg"
+              alt="product-image"
+            />
+          </a>
+        </div>
+        <!-- NOTE Card Title -->
+        <!--  -->
+        <div class="w-5/6 -mt-10">
+          <h2
+            class="bg-gray-400 rounded-tr-md text-xl font-Kanit font-medium px-2 py-1 w-fit capitalize"
+          >
+            Lighting
+          </h2>
+          <hr class="border-gray-400 border-2 rounded-3xl" />
+          <p class="px-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum,
+            dolorum fugit nostrum ratione voluptatum ullam. Ipsam recusandae
+            voluptate voluptatibus magni.
+          </p>
+        </div>
+        <!--  -->
+        <!--NOTE Price Rating Availability  -->
+
+        <div
+          class="flex flex-row justify-between items-center w-5/6 mx-auto bg-gray-400"
+        >
+          <div class="px-2 rounded-sm drop-shadow-sm">
+            <p class="font-Kanit font-thin">
+              Price: <span class="font-medium"> 123 $</span>
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center px-2 py-1 rounded-sm drop-shadow-sm"
+          >
+            <div class="flex flex-row justify-end">
+              <p class="flex text-xs pr-2">Status:</p>
+              <span
+                ><img
+                  class="w-4"
+                  src="/dist/img/Products/instock.svg"
+                  alt="in-stock-icon"
+              /></span>
+            </div>
+            <div class="flex flex-row justify-center items-center pt-1">
+              <p class="flex text-xs pr-2">Rating:</p>
+              <div class="flex justify-center items-center">
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="" class="flex justify-center items-center mt-2">
+            <button
+              id="productsBtn"
+              class="flex justify-center items-center text-[#f4eded] bg-gray-600 bg-opacity-80 text-lg font-bold py-1 px-2 rounded-lg border-2 border-[#7f8fc8] transition ease-in-out duration-300 hover:bg-[#CFA991] hover:text-gray-900"
+            >
+              Buy Now
+              <img
+                src="./img/shopping-cart.png"
+                class="w-8 pl-2"
+                alt="cart-icon"
+              />
+            </button>
+          </a>
+        </div>
+        <hr
+          class="mt-2 w-2/3 mx-auto border-gray-400 border-2 rounded-3xl border-opacity-30"
+        />
+      </div>
+
+      <!-- NOTE Fourth Card  -->
+      <!--  -->
+      <div
+        class="flex flex-col justify-center max-w-lg items-center mt-10 left-enter-animate"
+      >
+        <div class="w-5/6 rounded-md bg-gray-400">
+          <a href="">
+            <img
+              class="object-contain rounded-md"
+              src="/dist/img/Products/Gear-(4).jpg"
+              alt="product-image"
+            />
+          </a>
+        </div>
+        <!-- NOTE Card Title -->
+        <!--  -->
+        <div class="w-5/6 -mt-10">
+          <h2
+            class="bg-gray-400 rounded-tr-md text-xl font-Kanit font-medium px-2 py-1 w-fit capitalize"
+          >
+            portrait lens
+          </h2>
+          <hr class="border-gray-400 border-2 rounded-3xl" />
+          <p class="px-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum,
+            dolorum fugit nostrum ratione voluptatum ullam. Ipsam recusandae
+            voluptate voluptatibus magni.
+          </p>
+        </div>
+        <!--  -->
+        <!--NOTE Price Rating Availability  -->
+
+        <div
+          class="flex flex-row justify-between items-center w-5/6 mx-auto bg-gray-400"
+        >
+          <div class="px-2 rounded-sm drop-shadow-sm">
+            <p class="font-Kanit font-thin">
+              Price: <span class="font-medium"> 74 $</span>
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center px-2 py-1 rounded-sm drop-shadow-sm"
+          >
+            <div class="flex flex-row justify-end">
+              <p class="flex text-xs pr-2">Status:</p>
+              <span
+                ><img
+                  class="w-4"
+                  src="/dist/img/Products/instock.svg"
+                  alt="in-stock-icon"
+              /></span>
+            </div>
+            <div class="flex flex-row justify-center items-center pt-1">
+              <p class="flex text-xs pr-2">Rating:</p>
+              <div class="flex justify-center items-center">
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="" class="flex justify-center items-center mt-2">
+            <button
+              id="productsBtn"
+              class="flex justify-center items-center text-[#f4eded] bg-gray-600 bg-opacity-80 text-lg font-bold py-1 px-2 rounded-lg border-2 border-[#7f8fc8] transition ease-in-out duration-300 hover:bg-[#CFA991] hover:text-gray-900"
+            >
+              Buy Now
+              <img
+                src="./img/shopping-cart.png"
+                class="w-8 pl-2"
+                alt="cart-icon"
+              />
+            </button>
+          </a>
+        </div>
+        <hr
+          class="mt-2 w-2/3 mx-auto border-gray-400 border-2 rounded-3xl border-opacity-30"
+        />
+      </div>
+
+      <!-- NOTE Fifth Card  -->
+      <!--  -->
+      <div
+        class="flex flex-col justify-center max-w-lg items-center mt-10 left-enter-animate"
+      >
+        <div class="w-5/6 rounded-md bg-gray-400">
+          <a href="">
+            <img
+              class="object-contain rounded-md"
+              src="/dist/img/Products/Gear-(5).jpg"
+              alt="product-image"
+            />
+          </a>
+        </div>
+        <!-- NOTE Card Title -->
+        <!--  -->
+        <div class="w-5/6 -mt-10">
+          <h2
+            class="bg-gray-400 rounded-tr-md text-xl font-Kanit font-medium px-2 py-1 w-fit capitalize"
+          >
+            prime lens
+          </h2>
+          <hr class="border-gray-400 border-2 rounded-3xl" />
+          <p class="px-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum,
+            dolorum fugit nostrum ratione voluptatum ullam. Ipsam recusandae
+            voluptate voluptatibus magni.
+          </p>
+        </div>
+        <!--  -->
+        <!--NOTE Price Rating Availability  -->
+
+        <div
+          class="flex flex-row justify-between items-center w-5/6 mx-auto bg-gray-400"
+        >
+          <div class="px-2 rounded-sm drop-shadow-sm">
+            <p class="font-Kanit font-thin">
+              Price: <span class="font-medium"> 215 $</span>
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center px-2 py-1 rounded-sm drop-shadow-sm"
+          >
+            <div class="flex flex-row justify-end">
+              <p class="flex text-xs pr-2">Status:</p>
+              <span
+                ><img
+                  class="w-4"
+                  src="/dist/img/Products/instock.svg"
+                  alt="in-stock-icon"
+              /></span>
+            </div>
+            <div class="flex flex-row justify-center items-center pt-1">
+              <p class="flex text-xs pr-2">Rating:</p>
+              <div class="flex justify-center items-center">
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="" class="flex justify-center items-center mt-2">
+            <button
+              id="productsBtn"
+              class="flex justify-center items-center text-[#f4eded] bg-gray-600 bg-opacity-80 text-lg font-bold py-1 px-2 rounded-lg border-2 border-[#7f8fc8] transition ease-in-out duration-300 hover:bg-[#CFA991] hover:text-gray-900"
+            >
+              Buy Now
+              <img
+                src="./img/shopping-cart.png"
+                class="w-8 pl-2"
+                alt="cart-icon"
+              />
+            </button>
+          </a>
+        </div>
+        <hr
+          class="mt-2 w-2/3 mx-auto border-gray-400 border-2 rounded-3xl border-opacity-30"
+        />
+      </div>
+
+      <!-- NOTE Sixth Card  -->
+      <!--  -->
+      <div
+        class="flex flex-col justify-center max-w-lg items-center mt-10 left-enter-animate"
+      >
+        <div class="w-5/6 rounded-md bg-gray-400">
+          <a href="">
+            <img
+              class="object-contain rounded-md"
+              src="/dist/img/Products/Gear-(6).jpg"
+              alt="product-image"
+            />
+          </a>
+        </div>
+        <!-- NOTE Card Title -->
+        <!--  -->
+        <div class="w-5/6 -mt-10">
+          <h2
+            class="bg-gray-400 rounded-tr-md text-xl font-Kanit font-medium px-2 py-1 w-fit capitalize"
+          >
+            multipurpose lens
+          </h2>
+          <hr class="border-gray-400 border-2 rounded-3xl" />
+          <p class="px-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum,
+            dolorum fugit nostrum ratione voluptatum ullam. Ipsam recusandae
+            voluptate voluptatibus magni.
+          </p>
+        </div>
+        <!--  -->
+        <!--NOTE Price Rating Availability  -->
+
+        <div
+          class="flex flex-row justify-between items-center w-5/6 mx-auto bg-gray-400"
+        >
+          <div class="px-2 rounded-sm drop-shadow-sm">
+            <p class="font-Kanit font-thin">
+              Price: <span class="font-medium"> 48 $</span>
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center px-2 py-1 rounded-sm drop-shadow-sm"
+          >
+            <div class="flex flex-row justify-end">
+              <p class="flex text-xs pr-2">Status:</p>
+              <span
+                ><img
+                  class="w-4"
+                  src="/dist/img/Products/instock.svg"
+                  alt="in-stock-icon"
+              /></span>
+            </div>
+            <div class="flex flex-row justify-center items-center pt-1">
+              <p class="flex text-xs pr-2">Rating:</p>
+              <div class="flex justify-center items-center">
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="" class="flex justify-center items-center mt-2">
+            <button
+              id="productsBtn"
+              class="flex justify-center items-center text-[#f4eded] bg-gray-600 bg-opacity-80 text-lg font-bold py-1 px-2 rounded-lg border-2 border-[#7f8fc8] transition ease-in-out duration-300 hover:bg-[#CFA991] hover:text-gray-900"
+            >
+              Buy Now
+              <img
+                src="./img/shopping-cart.png"
+                class="w-8 pl-2"
+                alt="cart-icon"
+              />
+            </button>
+          </a>
+        </div>
+        <hr
+          class="mt-2 w-2/3 mx-auto border-gray-400 border-2 rounded-3xl border-opacity-30"
+        />
+      </div>
+
+      <!-- NOTE Sixth Card  -->
+      <!--  -->
+      <div
+        class="flex flex-col justify-center max-w-lg items-center mt-10 left-enter-animate"
+      >
+        <div class="w-5/6 rounded-md">
+          <a href="">
+            <img
+              class="object-contain rounded-md"
+              src="/dist/img/Products/Gear-(7).jpg"
+              alt="product-image"
+            />
+          </a>
+        </div>
+        <!-- NOTE Card Title -->
+        <!--  -->
+        <div class="w-5/6 -mt-10">
+          <h2
+            class="bg-gray-400 rounded-tr-md text-xl font-Kanit font-medium px-2 py-1 w-fit capitalize"
+          >
+            DSLR Stand
+          </h2>
+          <hr class="border-gray-400 border-2 rounded-3xl" />
+          <p class="px-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum,
+            dolorum fugit nostrum ratione voluptatum ullam. Ipsam recusandae
+            voluptate voluptatibus magni.
+          </p>
+        </div>
+        <!--  -->
+        <!--NOTE Price Rating Availability  -->
+
+        <div
+          class="flex flex-row justify-between items-center w-5/6 mx-auto bg-gray-400"
+        >
+          <div class="px-2 rounded-sm drop-shadow-sm">
+            <p class="font-Kanit font-thin">
+              Price: <span class="font-medium"> 36 $</span>
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center px-2 py-1 rounded-sm drop-shadow-sm"
+          >
+            <div class="flex flex-row justify-end">
+              <p class="flex text-xs pr-2">Status:</p>
+              <span
+                ><img
+                  class="w-4"
+                  src="/dist/img/Products/instock.svg"
+                  alt="in-stock-icon"
+              /></span>
+            </div>
+            <div class="flex flex-row justify-center items-center pt-1">
+              <p class="flex text-xs pr-2">Rating:</p>
+              <div class="flex justify-center items-center">
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+                <span>
+                  <img
+                    class="w-3"
+                    src="/dist/img/Products/rating.svg"
+                    alt="rating-icon"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="" class="flex justify-center items-center mt-2">
+            <button
+              id="productsBtn"
+              class="flex justify-center items-center text-[#f4eded] bg-gray-600 bg-opacity-80 text-lg font-bold py-1 px-2 rounded-lg border-2 border-[#7f8fc8] transition ease-in-out duration-300 hover:bg-[#CFA991] hover:text-gray-900"
+            >
+              Buy Now
+              <img
+                src="./img/shopping-cart.png"
+                class="w-8 pl-2"
+                alt="cart-icon"
+              />
+            </button>
+          </a>
+        </div>
+        <hr
+          class="mt-2 w-2/3 mx-auto border-gray-400 border-2 rounded-3xl border-opacity-30"
+        />
+      </div>
+    </main>
+
+    <footer class="mt-auto mx-auto flex w-full flex-col lg:w-3/4">
+      <div class="my-4 px-4">
+        <div class="bg-gray-300 py-1 px-2 rounded-md">
+          <a href="#home">
+            <h1 class="font-Kanit text-xl text-[#2a2a2a] text-center m-0 lg:text-2xl">
+              Pixelgraphy
+            </h1>
+          </a>
+        </div>
+        <div class="flex flex-row justify-center items-center py-4">
+          <a href="https://www.facebook.com">
+            <img src="./img/icons/facebook.png" class="w-9 pl-2 transition ease-in-out duration-300 hover:scale-125"
+              alt="facebook" />
+          </a>
+          <a href="https://www.instagram.com">
+            <img src="./img/icons/Instagram.png" class="w-9 pl-2 transition ease-in-out duration-300 hover:scale-125"
+              alt="facebook" />
+          </a>
+          <a href="https://twitter.com/?lang=en">
+            <img src="./img/icons/twitter.png" class="w-9 pl-2 transition ease-in-out duration-300 hover:scale-125"
+              alt="facebook" />
+          </a>
+          <a href="https://linkedin.com/?lang=en">
+            <img src="./img/icons/linkedin.png" class="w-9 pl-2 transition ease-in-out duration-300 hover:scale-125"
+              alt="facebook" />
+          </a>
+          <a href="https://www.youtube.com">
+            <img src="./img/icons/youtube.png" class="w-9 pl-2 transition ease-in-out duration-300 hover:scale-125"
+              alt="facebook" />
+          </a>
+        </div>
+        <div class="my-4 px-4 py-4 border-2 border-gray-400 rounded-md">
+          <div class="flex flex-row items-center justify-center">
+            <ul class="w-1/2 text-center text-black font-Poppins">
+              <li><a href="#home">Home</a></li>
+              <hr class="w-1/2 mx-auto" />
+              <li class="pt-3 w-ful"><a href="products.html">Products</a></li>
+              <hr class="w-1/2 mx-auto" />
+              <li class="pt-3 w-ful"><a href="community.html">Community</a></li>
+              <hr class="w-1/2 mx-auto" />
+            </ul>
+            <ul class="w-1/2 text-center text-black font-Poppins">
+              <li><a href="gallery.html">Gallery</a></li>
+              <hr class="w-1/2 mx-auto" />
+              <li class="pt-3 w-ful"><a href="blogs.html">Blogs</a></li>
+              <hr class="w-1/2 mx-auto" />
+              <li class="pt-3 w-ful"><a href="about.html">About us</a></li>
+              <hr class="w-1/2 mx-auto" />
+            </ul>
+          </div>
+        </div>
+        <div class="my-4 py-4 flex flex-col justify-center items-center bg-gray-600 text-white rounded-md">
+          <div class="flex flex-col items-center w-1/2">
+            <span class="underline pb-2 tracking-widest font-Poppins">Email & address</span>
+            <div class="flex flex-col justify-center items-center md:flex md:flex-row md:gap-8">
+              <div class="flex flex-col justify-center items-center">
+                <cite>pexilgraphy@email.com</cite>
+                <address>country: Xxxxxx</address>
+              </div>
+              <div>
+                <address>city: Xxxxxx</address>
+                <address>street: Xxx</address>
+              </div>
+            </div>
+          </div>
+          <hr class="bg-[#f2ecec44] h-0.5 w-5/6 mx-auto mt-8 rounded-lg border-none" />
+          <div class="flex flex-row justify-evenly items-center list-none w-3/4">
+            <li><a href="./privacy.html">Privacy & Policy</a></li>
+            <li><a href="./terms.html">Terms</a></li>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

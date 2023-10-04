@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en" class="box-border h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/dist/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,700;0,800;0,900;1,300;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleanm.css" />
+    <title>community</title>
+  </head>
+  <body class="relative min-h-screen flex flex-col scroll-smooth bg-[#DDDDDD]">
+    <div id="navWrapper" class="w-full bg-cover bg-no-repeat bg-left pt-2">
+      <nav
+        class="w-full flex flex-row justify-between items-center mx-auto p-4 lg:w-3/4 lg:bg-gray-500 lg:bg-opacity-60 lg:rounded-md"
+      >
+        <div id="home" class="bg-gray-300 bg-opacity-60 py-1 px-2 rounded-md">
+          <a href="index.html">
+            <h1
+              class="font-Kanit text-xl text-[#2a2a2a] text-center m-0 lg:text-2xl"
+            >
+              Pixelgraphy
+            </h1>
+          </a>
+        </div>
+        <div class="relative">
+          <div
+            class="hidden text-[#404040] font-Kanit text-lg text-center bg-gray-300 bg-opacity-40 py-1 rounded-md lg:flex"
+          >
+            <ul class="flex flex-row item-center">
+              <li>
+                <a
+                  class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
+                  href="products.html"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
+                  href="community.html"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a
+                  class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
+                  href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
+                  href="blogs.html"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
+                  href="about.html"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="bg-gray-300 bg-opacity-40 py-1 px-2 rounded-md lg:hidden">
+            <a id="humb-menu" class="cursor-pointer"
+              ><img class="w-6" src="./img/icons/menu.png" alt="menu-icon"
+            /></a>
+            <a id="humb-menu-close"
+              ><img
+                id="closeIcon"
+                class="w-6 hidden"
+                src="./img/icons/close.png"
+                alt="close-menu-icon"
+            /></a>
+          </div>
+          <div
+            id="mobile-nav-menu"
+            class="hidden absolute items-center justify-center right-0 w-64 bg-gray-400 rounded-md py-4 pl-10"
+          >
+            <ul class="w-full">
+              <li class="pt-3 w-ful">
+                <a
+                  class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <hr class="bg-[#CBD9B4]" />
+              <li class="pt-3 w-ful">
+                <a
+                  class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
+                  href="products.html"
+                  >Products</a
+                >
+              </li>
+              <hr />
+              <li class="pt-3 w-ful">
+                <a
+                  class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
+                  href="community.html"
+                  >Community</a
+                >
+              </li>
+              <hr />
+              <li class="pt-3 w-ful">
+                <a
+                  class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
+                  href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <hr />
+              <li class="pt-3 w-ful">
+                <a
+                  class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
+                  href="blogs.html"
+                  >Blogs</a
+                >
+              </li>
+              <hr />
+              <li class="pt-3 w-ful">
+                <a
+                  class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
+                  href="about.html"
+                  >About us</a
+                >
+              </li>
+              <hr />
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- >> Header  START << -->
+    
+    <!-- >> After Signing Up Message << -->
+    <div
+    id="signupMsg"
+    class="hidden h-80 m-4 rounded-md bg-gray-300 justify-center items-center md:w-1/2 md:mx-auto md:mt-[8%] left-enter-animate"
+    >
+      <h2
+        class="flex font-Kanit text-center text-3xl md:text-4xl animate-bounce"
+      >
+        Thank you for Signing up 😃
+      </h2>
+    </div>
+
+    <div
+      id="formWraper"
+      class="grid grid-cols-1 gap-x-2 justify-items-center lg:max-w-6xl mt-4 mb-10 mx-auto md:grid-cols-2"
+    >
+      <!-- >> Image Section <<-->
+      <div class="relative flex flex-col justify-center items-center">
+        <div>
+          <img
+            class="w-3/4 object-cover mx-auto md:w-full left-enter-animate"
+            src="/dist/img/signupheader.jpg"
+            alt="person-holding-a-camera"
+          />
+        </div>
+        <div
+          class="absolute top-0 bg-[#ADDFCA] bg-opacity-90 px-2 py-4 mx-auto text-center w-3/4 md:w-full left-enter-animate"
+        >
+          <h2
+            class="font-Kanit font-normal tracking-wide text-xl text-gray-700 md:text-2xl md:font-normal lg:4xl"
+          >
+            Join Our awesome community
+          </h2>
+        </div>
+      </div>
+      <!-- >> The Form Section <<-->
+      <div class="w-full">
+        <div class="mt-1 mx-auto px-2 w-10/12">
+          <h1
+            class="text-4xl font-Kanit font-[800] tracking-widest text-[#C23257] left-enter-animate"
+          >
+            Sign Up
+          </h1>
+        </div>
+        <div
+          class="w-5/7 flex flex-col justify-center items-center gap-x-4 mx-auto mt-6 lg:flex-row lg:w-5/6"
+        >
+          <div class="w-10/12 flex flex-col left-enter-animate">
+            <label class="font-Kanit pl-1">First Name</label>
+            <input
+              id="fName"
+              class="rounded-sm bg-[#7FD1AE] bg-opacity-60 border border-gray-500 pl-2 h-8"
+            />
+          </div>
+          <div class="w-10/12 flex flex-col left-enter-animate">
+            <label class="font-Kanit pl-1">Last Name</label>
+            <input
+              id="lName"
+              class="rounded-sm bg-[#7FD1AE] bg-opacity-60 border border-gray-500 pl-2 h-8"
+            />
+          </div>
+        </div>
+        <!--? Second-Part of the Form -->
+        <div
+          class="flex flex-col justify-center items-center w-full mt-4"
+        >
+          <div class="w-10/12 flex flex-col left-enter-animate">
+            <label class="font-Kanit pl-1 tracking-wider">Email</label>
+            <input
+              id="emailVal"
+              for="email"
+              class="rounded-sm bg-[#7FD1AE] bg-opacity-60 border border-gray-500 pl-2 h-8"
+            />
+          </div>
+          <div class="w-10/12 flex flex-col mt-4 left-enter-animate">
+            <label class="font-Kanit pl-1 tracking-wider">Password</label>
+            <input
+              id="passwordVal"
+              type="password"
+              class="rounded-sm bg-[#7FD1AE] bg-opacity-60 border border-gray-500 pl-2 h-8"
+            />
+          </div>
+        </div>
+        <div
+          id="terms"
+          class="flex flex-row justify-center items-center mt-8 mx-auto px-2 w-10/12 left-enter-animate"
+        >
+          <input id="checkBox" type="checkbox" />
+          <label class="pl-2 font-Kanit font-light"
+            >I've read and agree with the terms of services
+          </label>
+        </div>
+        <div>
+          <a class="flex justify-center items-center mt-8 left-enter-animate">
+            <button
+              id="signupBtn"
+              class="flex justify-center items-center text-[#a09f9f] text-lg font-bold py-1 px-2 mb-16 rounded-lg border border-gray-500 transition ease-in-out duration-300 tracking-widest w-10/12"
+            >
+              Sign Up
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- >> Header  END =>>>>>>>>  -->
+
+    <footer class="mt-auto mx-auto flex w-full flex-col lg:w-3/4">
+      <div class="my-4 px-4">
+        <div class="bg-gray-300 py-1 px-2 rounded-md">
+          <a href="#home">
+            <h1 class="font-Kanit text-xl text-[#2a2a2a] text-center m-0 lg:text-2xl">
+              Pixelgraphy
+            </h1>
+          </a>
+        </div>
+        <div class="flex flex-row justify-center items-center py-4">
+          <a href="https://www.facebook.com">
+            <img src="./img/icons/facebook.png" class="w-9 pl-2 transition ease-in-out duration-300 hover:scale-125"
+              alt="facebook" />
+          </a>
+          <a href="https://www.instagram.com">
+            <img src="./img/icons/Instagram.png" class="w-9 pl-2 transition ease-in-out duration-300 hover:scale-125"
+              alt="facebook" />
+          </a>
+          <a href="https://twitter.com/?lang=en">
+            <img src="./img/icons/twitter.png" class="w-9 pl-2 transition ease-in-out duration-300 hover:scale-125"
+              alt="facebook" />
+          </a>
+          <a href="https://linkedin.com/?lang=en">
+            <img src="./img/icons/linkedin.png" class="w-9 pl-2 transition ease-in-out duration-300 hover:scale-125"
+              alt="facebook" />
+          </a>
+          <a href="https://www.youtube.com">
+            <img src="./img/icons/youtube.png" class="w-9 pl-2 transition ease-in-out duration-300 hover:scale-125"
+              alt="facebook" />
+          </a>
+        </div>
+        <div class="my-4 px-4 py-4 border-2 border-gray-400 rounded-md">
+          <div class="flex flex-row items-center justify-center">
+            <ul class="w-1/2 text-center text-black font-Poppins">
+              <li><a href="#home">Home</a></li>
+              <hr class="w-1/2 mx-auto" />
+              <li class="pt-3 w-ful"><a href="products.html">Products</a></li>
+              <hr class="w-1/2 mx-auto" />
+              <li class="pt-3 w-ful"><a href="community.html">Community</a></li>
+              <hr class="w-1/2 mx-auto" />
+            </ul>
+            <ul class="w-1/2 text-center text-black font-Poppins">
+              <li><a href="gallery.html">Gallery</a></li>
+              <hr class="w-1/2 mx-auto" />
+              <li class="pt-3 w-ful"><a href="blogs.html">Blogs</a></li>
+              <hr class="w-1/2 mx-auto" />
+              <li class="pt-3 w-ful"><a href="about.html">About us</a></li>
+              <hr class="w-1/2 mx-auto" />
+            </ul>
+          </div>
+        </div>
+        <div class="my-4 py-4 flex flex-col justify-center items-center bg-gray-600 text-white rounded-md">
+          <div class="flex flex-col items-center w-1/2">
+            <span class="underline pb-2 tracking-widest font-Poppins">Email & address</span>
+            <div class="flex flex-col justify-center items-center md:flex md:flex-row md:gap-8">
+              <div class="flex flex-col justify-center items-center">
+                <cite>pexilgraphy@email.com</cite>
+                <address>country: Xxxxxx</address>
+              </div>
+              <div>
+                <address>city: Xxxxxx</address>
+                <address>street: Xxx</address>
+              </div>
+            </div>
+          </div>
+          <hr class="bg-[#f2ecec44] h-0.5 w-5/6 mx-auto mt-8 rounded-lg border-none" />
+          <div class="flex flex-row justify-evenly items-center list-none w-3/4">
+            <li><a href="./privacy.html">Privacy & Policy</a></li>
+            <li><a href="./terms.html">Terms</a></li>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="comunity.js"></script>
+  </body>
+</html>

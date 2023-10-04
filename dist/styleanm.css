@@ -1,0 +1,68 @@
+#signup{
+    animation: sing-up-animation 1.6s ease-in ;
+}
+.fad-in{
+    animation: sing-up-animation 1.6s ease-in ;
+}
+
+@keyframes sing-up-animation{
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 50;
+    }
+    100%{
+        opacity: 100;
+
+    }
+
+}
+
+.left-enter-animate{
+    animation: left-entering cubic-bezier(0.31, 0.15, 0.31, 1.39) 800ms;
+    animation-delay: 100ms;
+    
+}
+.right-enter-animate{
+    animation: right-entering cubic-bezier(0.4, 0.09, 0, 1.75) 800ms;
+    animation-delay: 100ms;
+    
+}
+
+@keyframes left-entering {
+
+    0% {
+        transform: translateX(-50%);
+        opacity: 0%;
+    }
+
+    33%{
+        opacity: 30%;
+    }
+   
+    100% {
+        transform: translateX(0%);
+        opacity: 100%;
+
+    }
+    
+}
+
+
+@keyframes right-entering {
+
+    0% {
+        transform: translateX(50%);
+        opacity: 0%;
+    }
+    
+    100% {
+        transform: translateX(0%);
+        opacity: 100%;
+
+    }
+    
+}
+
