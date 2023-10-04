@@ -9,7 +9,7 @@ Whether you're a photography enthusiast,Explore our Multipage Website for all th
 
 ## Features
 
-- **Blogs:** Explore engaging blogs covering various aspects of photography and [related topics].
+- **Blogs:** Explore engaging blogs covering various aspects of photography and related topics.
 - **Products:** Discover top-notch photography products recommended by our community.
 - **Community:** Sign up to become a part of our vibrant photography community.
 - **Gallery:** Browse through a visually stunning collection of photographs shared by our community.
