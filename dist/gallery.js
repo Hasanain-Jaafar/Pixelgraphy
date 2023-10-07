@@ -1,6 +1,5 @@
 //  Selecting DOM Elements
 const photosArr = document.querySelectorAll("#photos-wrapper img"),
-  catagorySelection = document.getElementById("options-container"),
   mainContainer = document.getElementById("main-container"),
   showAllBtn = document.getElementById("showAllBtn"),
   cityBtn = document.getElementById("cityBtn"),
@@ -13,14 +12,12 @@ const modalOverlay = document.querySelector(".overlay");
 const closeModalBtn = document.querySelector(".close-btn");
 const popUpImage = document.querySelector(".modal div img");
 
-
-
-/*Events to filter Images*/ 
-showAllBtn.addEventListener('click', () => {
-  showAllBtn.classList.add('hidden')
+/*Events to filter Images*/
+showAllBtn.addEventListener("click", () => {
+  showAllBtn.classList.add("hidden");
   photosArr.forEach((e) => {
     e.classList.remove("hidden");
-})
+  });
 });
 cityBtn.addEventListener("click", () => {
   photosArr.forEach((e) => {
@@ -94,4 +91,3 @@ for (let i = 0; i < photosArr.length; i++) {
     }
   });
 }
-

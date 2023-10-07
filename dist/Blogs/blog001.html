@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="box-border h-full">
+<html lang="en" class="scroll-smooth box-border h-full">
 
 <head>
   <meta charset="UTF-8" />
@@ -15,138 +15,110 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300;1,400&display=swap"
     rel="stylesheet" />
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <link rel="stylesheet" href="style.css" />
-  <title>Blogs</title>
+  <link rel="stylesheet" href="../style.css" />
+  <title>Pixelgraphy</title>
 </head>
 
 <body class="relative min-h-screen flex flex-col scroll-smooth bg-[#DDDDDD]">
-  <div id="navWrapper" class="w-full pt-2">
+  <div id="navWrapper"
+    class=" relative h-[600px] w-full bg-cover bg-no-repeat bg-center pt-2 ">
     <nav
       class="w-full flex flex-row justify-between items-center mx-auto p-4 lg:w-3/4 lg:bg-gray-500 lg:bg-opacity-60 lg:rounded-md">
-      <div id="home" class="rounded-md bg-gray-300 bg-opacity-60 px-2 py-1">
-        <a href="index.html">
-          <h1 class="m-0 text-center font-Kanit text-xl text-[#2a2a2a] lg:text-2xl">
+      <div id="home" class="bg-gray-300 bg-opacity-60 py-1 px-2 rounded-md">
+        <a href="#home">
+          <h1 class="font-Kanit text-xl text-[#2a2a2a] text-center m-0 lg:text-2xl">
             Pixelgraphy
           </h1>
         </a>
       </div>
       <div class="relative">
         <div
-          class="hidden rounded-md bg-gray-300 bg-opacity-40 py-1 text-center font-Kanit text-lg text-[#404040] lg:flex">
-          <ul class="item-center flex flex-row">
+          class="hidden text-[#404040] font-Kanit text-lg text-center bg-gray-300 bg-opacity-40 py-1 rounded-md lg:flex">
+          <ul class="flex flex-row item-center">
             <li>
-              <a class="px-2 transition duration-300 ease-in-out hover:text-[#E3DE9A] hover:underline"
-                href="index.html">Home</a>
-            </li>
-            <li>
-              <a class="px-2 transition duration-300 ease-in-out hover:text-[#E3DE9A] hover:underline"
+              <a class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
                 href="products.html">Products</a>
             </li>
             <li>
-              <a class="px-2 transition duration-300 ease-in-out hover:text-[#E3DE9A] hover:underline"
+              <a class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
                 href="community.html">Community</a>
             </li>
             <li>
-              <a class="px-2 transition duration-300 ease-in-out hover:text-[#E3DE9A] hover:underline"
+              <a class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
                 href="gallery.html">Gallery</a>
             </li>
             <li>
-              <a class="px-2 transition duration-300 ease-in-out hover:text-[#E3DE9A] hover:underline"
+              <a class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
                 href="blogs.html">Blogs</a>
             </li>
             <li>
-              <a class="px-2 transition duration-300 ease-in-out hover:text-[#E3DE9A] hover:underline"
+              <a class="px-2 hover:underline hover:text-[#E3DE9A] transition ease-in-out duration-300"
                 href="about.html">About</a>
             </li>
           </ul>
         </div>
-        <div class="rounded-md bg-gray-300 bg-opacity-40 px-2 py-1 lg:hidden">
-          <a id="humb-menu" class="cursor-pointer"><img class="w-6" src="./img/icons/menu.png" alt="menu-icon" /></a>
-          <a id="humb-menu-close"><img id="closeIcon" class="hidden w-6" src="./img/icons/close.png"
+        <div class="bg-gray-300 bg-opacity-40 py-1 px-2 rounded-md lg:hidden">
+          <a id="humb-menu" class="cursor-pointer"><img class="w-6" src="../img/icons/menu.png" alt="menu-icon" /></a>
+          <a id="humb-menu-close"><img id="closeIcon" class="w-6 hidden -z-10" src="../img/icons/close.png"
               alt="close-menu-icon" /></a>
         </div>
         <div id="mobile-nav-menu"
-          class="absolute right-0 hidden w-64 items-center justify-center rounded-md bg-gray-400 py-4 pl-10">
+          class="hidden absolute items-center justify-center right-0 w-64 bg-gray-400 rounded-md py-4 pl-10">
           <ul class="w-full">
-            <li class="w-ful pt-3">
-              <a class="cursor-pointer transition delay-75 duration-100 ease-in-out hover:pl-4 hover:font-semibold hover:transition-all"
+            <li>
+              <a class="cursor-pointer transition-all ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
                 href="index.html">Home</a>
             </li>
-            <hr class="bg-[#CBD9B4]" />
-            <li class="w-ful pt-3">
-              <a class="cursor-pointer transition delay-75 duration-100 ease-in-out hover:pl-4 hover:font-semibold hover:transition-all"
+            <hr class="bg-[#CBD9B4] w-3/4" />
+            <li class="pt-3 w-ful">
+              <a class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
                 href="products.html">Products</a>
             </li>
-            <hr />
-            <li class="w-ful pt-3">
-              <a class="cursor-pointer transition delay-75 duration-100 ease-in-out hover:pl-4 hover:font-semibold hover:transition-all"
+            <hr class="bg-[#CBD9B4] w-3/4" />
+            <li class="pt-3 w-ful">
+              <a class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
                 href="community.html">Community</a>
             </li>
-            <hr />
-            <li class="w-ful pt-3">
-              <a class="cursor-pointer transition delay-75 duration-100 ease-in-out hover:pl-4 hover:font-semibold hover:transition-all"
+            <hr class="bg-[#CBD9B4] w-3/4" />
+            <li class="pt-3 w-ful">
+              <a class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
                 href="gallery.html">Gallery</a>
             </li>
-            <hr />
-            <li class="w-ful pt-3">
-              <a class="cursor-pointer transition delay-75 duration-100 ease-in-out hover:pl-4 hover:font-semibold hover:transition-all"
+            <hr class="bg-[#CBD9B4] w-3/4" />
+            <li class="pt-3 w-ful">
+              <a class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
                 href="blogs.html">Blogs</a>
             </li>
-            <hr />
-            <li class="w-ful pt-3">
-              <a class="cursor-pointer transition delay-75 duration-100 ease-in-out hover:pl-4 hover:font-semibold hover:transition-all"
+            <hr class="bg-[#CBD9B4] w-3/4" />
+            <li class="pt-3 w-ful">
+              <a class="cursor-pointer transition ease-in-out duration-100 delay-75 hover:pl-4 hover:transition-all hover:font-semibold"
                 href="about.html">About us</a>
             </li>
-            <hr />
+            <hr class="bg-[#CBD9B4] w-3/4" />
           </ul>
         </div>
       </div>
     </nav>
-  </div>
-  <header
-    class="mx-auto mb-8 mt-5 w-11/12 p-4 flex flex-col justify-center rounded-md items-center bg-gradient-to-bl from-slate-400 via-red-400 to-indigo-400 md:w-9/12">
-    <section class="w-full  flex flex-col items-center px-2 mb-4 md:h-32">
-      <h1 class="text-2xl text-center font-Kanit text-white md:text-4xl md:mb-4  lg:drop-shadow-md">
-        Sharpen your Skills by Reading </h1>
-      <p class="lg:w-3/6 lg:text-xl md:w-3/4 text-center">Dive into a world of visual mastery and enrich your photography skills through the art of reading.</p>
-    </section>
-  </header>
-  <main class="w-11/12 mb-4 grid grid-cols-1 px-2 mx-auto md:grid-cols-3 lg:w-9/12">
-    <!-- >> first Blog -->
-    <a href="./Blogs/blog001.html">
-      <section class="w-full  flex flex-col mb-4 items-center lg:w-fit lg:items-start">
-        <div class="w-11/12 h-[215px] flex">
-          <img src="/dist/img/Blogs/blog.jpg" class="object-contain lg:object-cover " alt="">
-        </div>
-        <div class="w-10/12 pt-2">
-          <h1 class="text-xl font-Poppins font-semibold">Lorem, ipsum.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eum molestias consequatur ...</p>
-        </div>
-        <div class="w-10/12 pt-1 flex gap-4 items-start font-Poppins text-sm">
-          <p>john smith</p>
-          <p> 2023-sep-12</p>
-        </div>
-      </section>
-    </a>
-    <!-- >> End first Blog -->
-    <!--  -->
-    <!-- >> first Blog -->
-    <a href="">
-      <section class="w-full  flex flex-col mb-4 items-center  lg:w-fit lg:items-start">
-        <div class="w-11/12 h-[215px] flex">
-          <img src="/dist/img/Blogs/blog1.jpg" class="object-contain lg:object-cover" alt="">
-        </div>
-        <div class="w-10/12 pt-2">
-          <h1 class="text-xl font-Poppins font-semibold">Lorem, ipsum.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eum molestias consequatur ...</p>
-        </div>
-        <div class="w-10/12 pt-1 flex gap-4 items-start font-Poppins text-sm">
-          <p>Micheal brad</p>
-          <p> 2023-sep-12</p>
-        </div>
-      </section>
-    </a>
-  </main>
+
+    <main>
+        <header>
+            <div><!--Header image --></div>
+            <div><h1><!-- Blog title --></h1></div>
+            <div><h2> <!-- subtitle  --> </h2></div>
+        </header>
+        <section>
+            <p><!-- Paragraphs  --></p>
+            <h3><!-- outlines  --></h3>
+            <p><!-- Paragraphs  --></p>
+        </section>
+        <section>
+            <!-- most recent Blogs -->
+            <div> <!--Blog Card1--> </div>
+            <div> <!--Blog Card2--> </div>
+            <div> <!--Blog Card3--> </div>
+        </section>
+    </main>
+   
 
   <footer class="mt-auto mx-auto flex w-full flex-col lg:w-3/4">
     <div class="my-4 px-4">
@@ -201,14 +173,15 @@
       </div>
       <div class="my-4 py-4 flex flex-col justify-center items-center bg-gray-600 text-white rounded-md">
         <div class="flex flex-col items-center w-1/2">
-          <span class="underline pb-2 tracking-widest font-Poppins">Email & address</span>
+          <span class="underline pb-2 tracking-widest font-Poppins">
+            Email & address</span>
           <div class="flex flex-col justify-center items-center md:flex md:flex-row md:gap-8">
             <div class="flex flex-col justify-center items-center">
               <cite>pexilgraphy@email.com</cite>
               <address>country: Xxxxxx</address>
             </div>
             <div>
-              <address>city: Xxxxxx</address>
+              <address>city: Xxxxx</address>
               <address>street: Xxx</address>
             </div>
           </div>
@@ -221,8 +194,7 @@
       </div>
     </div>
   </footer>
-
-  <script src="main.js"></script>
+  <script src="../main.js" defer></script>
 </body>
 
 </html>
