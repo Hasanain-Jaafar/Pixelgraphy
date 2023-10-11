@@ -1737,6 +1737,10 @@ video {
     height: 250px;
   }
 
+  .md\:h-auto {
+    height: auto;
+  }
+
   .md\:max-h-\[200px\] {
     max-height: 200px;
   }
