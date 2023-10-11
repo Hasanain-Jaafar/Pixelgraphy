@@ -30,6 +30,7 @@ cityBtn.addEventListener("click", () => {
 });
 natureBtn.addEventListener("click", () => {
   photosArr.forEach((e) => {
+    showAllBtn.classList.remove("hidden");
     e.classList.remove("hidden");
     if (e.alt !== "nature") {
       e.classList.add("hidden");
@@ -38,6 +39,7 @@ natureBtn.addEventListener("click", () => {
 });
 portraitBtn.addEventListener("click", () => {
   photosArr.forEach((e) => {
+    showAllBtn.classList.remove("hidden");
     e.classList.remove("hidden");
     if (e.alt !== "portrait") {
       e.classList.add("hidden");
