@@ -27,11 +27,11 @@ checkBox.addEventListener("click", () => {
     }
   }
   if (formValues.length === checkedValues.length) {
-    signupBtn.classList.add("bg-[#C23257]","text-black");
+    signupBtn.classList.add("bg-[#C23257]", "text-black");
     signupBtn.classList.add("hover:bg-gray-300");
     signupBtn.classList.add("hover:text-gray-900");
 
-    // >> Activate Sign Upp Btn if all fields !==(Empty)
+    // >> Activate Sign Up Btn if all fields !==""
     signupBtn.addEventListener("click", () => {
       formWraper.remove();
       signupMsg.classList.remove("hidden");
