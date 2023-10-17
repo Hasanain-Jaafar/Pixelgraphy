@@ -8,7 +8,7 @@ const firstName = document.getElementById("fName"),
   signupMsg = document.getElementById("signupMsg"),
   signupBtn = document.getElementById("signupBtn");
 
-checkBox.addEventListener("click", () => {
+checkBox.addEventListener("change", () => {
   const formValues = [
     firstName.value,
     lastName.value,

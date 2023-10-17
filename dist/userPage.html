@@ -20,7 +20,7 @@
   <title>community</title>
 </head>
 
-<body class="relative min-h-screen flex flex-col scroll-smooth bg-[#DDDDDD]">
+<body class="relative min-h-screen flex flex-col scroll-smooth bg-[#DDDDDD] font-Poppins">
   <div id="navWrapper" class="w-full bg-cover bg-no-repeat bg-left pt-2">
     <nav
       class="w-full flex flex-row justify-between items-center mx-auto p-4 lg:w-3/4 lg:bg-gray-500 lg:bg-opacity-60 lg:rounded-md">
@@ -104,78 +104,46 @@
       </div>
     </nav>
   </div>
-  <!-- >> Header  START << -->
 
-  <!-- >> After Signing Up Message << -->
-  <div id="signupMsg"
-    class="hidden h-80 m-4 rounded-md bg-gray-300 justify-center items-center md:w-2/3 md:mx-auto md:mt-[8%] left-enter-animate">
-    <h2 class="flex font-Kanit text-center text-3xl md:text-4xl">
-      Thank you for Sign up 😃
-    </h2>
-  </div>
+  <!-- >> main -->
 
-  <div id="formWraper"
-    class="grid grid-cols-1 gap-x-2  justify-items-center lg:max-w-6xl mt-4 mb-10 mx-auto md:grid-cols-2">
-    <!-- >> Image Section <<-->
-    <div class="relative flex flex-col  px-2 justify-center items-center">
-      <div>
-        <img class="w-3/4 object-cover mx-auto md:w-full left-enter-animate" src="/dist/img/signupheader.jpg"
-          alt="person-holding-a-camera" />
-      </div>
-      <div
-        class="absolute top-0 left-2 right-2 bg-[#ADDFCA] bg-opacity-90 py-2 text-center mx-auto w-8/12 md:w-11/12 left-enter-animate">
-        <h2 class="font-Kanit font-normal tracking-wide text-xl text-gray-700 md:text-2xl md:font-normal lg:4xl">
-          Join Our awesome community
-        </h2>
-      </div>
+  <main class="container w-9/12 h-[100vh] mx-auto mb-24 mt-5 left-enter-animate">
+    <div class="w-full object-cover flex items-center overflow-hidden mb-4 h-[40%]">
+      <img src="./img/user-page/pagebg.jpg" alt="bgpage" class="w-full mt-36">
     </div>
-    <!-- >> The Form Section <<-->
-    <div class="w-full">
-      <div class="mt-1 mx-auto px-2 w-10/12">
-        <h1 class="text-4xl font-Kanit font-[800] tracking-widest text-[#C23257] left-enter-animate">
-          Sign Up
-        </h1>
+    <section class="flex gap-4 mx-auto -mt-14 w-10/12">
+      <!-- ->> Aside Bar -->
+      <div class="bg-[#5b7ea5] w-1/4  rounded-md">
+        <aside class="bg-[#dddd] flex items-center w-10/12 mx-auto rounded-lg mt-16 flex-col sticky top-16 left-0">
+          <div class="w-28 rounded-full border-2 border-gray-500 -mt-10 shadow-md">
+            <img src="./img/user-page/photographer1.jpg" alt="user_pic" class="rounded-full object-cover flex">
+          </div>
+          <div>
+            <h2 class="text-center font-bold text-xl">User_name</h2>
+            <div class="pt-4 flex flex-col gap-4">
+              <p>Lorem ipsum dolor sit.</p>
+              <p>Lorem ipsum dolor sit.</p>
+              <p>Lorem ipsum dolor sit.</p>
+              <button class="border rounded-md py-1 px-4 mx-auto bg-slate-300 font-semibold">Read More</button>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+          </div>
+        </aside>
       </div>
-      <div class="w-5/7 flex flex-col justify-center items-center gap-x-4 mx-auto mt-6 lg:flex-row lg:w-5/6">
-        <div class="w-10/12 flex flex-col left-enter-animate">
-          <label class="font-Kanit pl-1">First Name</label>
-          <input id="fName" class="rounded-sm bg-[#7FD1AE] bg-opacity-60 border border-gray-500 pl-2 h-8" />
-        </div>
-        <div class="w-10/12 flex flex-col left-enter-animate">
-          <label class="font-Kanit pl-1">Last Name</label>
-          <input id="lName" class="rounded-sm bg-[#7FD1AE] bg-opacity-60 border border-gray-500 pl-2 h-8" />
-        </div>
-      </div>
-      <!--? Second-Part of the Form -->
-      <div class="flex flex-col justify-center items-center w-full mt-4">
-        <div class="w-10/12 flex flex-col left-enter-animate">
-          <label class="font-Kanit pl-1 tracking-wider">Email</label>
-          <input id="emailVal" for="email"
-            class="rounded-sm bg-[#7FD1AE] bg-opacity-60 border border-gray-500 pl-2 h-8" />
-        </div>
-        <div class="w-10/12 flex flex-col mt-4 left-enter-animate">
-          <label class="font-Kanit pl-1 tracking-wider">Password</label>
-          <input id="passwordVal" type="password"
-            class="rounded-sm bg-[#7FD1AE] bg-opacity-60 border border-gray-500 pl-2 h-8" />
-        </div>
-      </div>
-      <div id="terms" class="flex flex-row justify-center items-center mt-8 mx-auto px-2 w-10/12 left-enter-animate">
-        <input id="checkBox" type="checkbox" />
-        <label class="pl-2 font-Kanit font-light">I've read and agree with the terms of services
-        </label>
-      </div>
-      <div>
-        <a href="./userPage.html" class="flex justify-center items-center mt-8 left-enter-animate">
-          <button id="signupBtn"
-            class="flex justify-center items-center text-[#a09f9f] text-lg font-bold py-1 px-2 mb-16 rounded-lg border border-gray-500 transition ease-in-out duration-300 tracking-widest w-10/12">
-            Sign Up
-          </button>
-        </a>
-      </div>
-    </div>
-  </div>
 
-  <!-- >> Header  END =>>>>>>>>  -->
+      <!-- ->> Article -->
+      <article class="bg-[#5b7ea5] w-3/4 rounded-md">
+        <div class="w-full h-[29%] object-contain flex items-center overflow-hidden rounded-md">
+          <img src="./img/user-page/user-page.jpg" alt="bg" class="w-full">
+        </div>
+        <div class="flex justify-center mt-8 ">
+          <h1>Hello User-Name </h1>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
 
   <footer class="mt-auto mx-auto flex w-full flex-col lg:w-3/4">
     <div class="my-4 px-4">
@@ -250,9 +218,7 @@
       </div>
     </div>
   </footer>
-
   <script src="main.js"></script>
-  <script src="comunity.js"></script>
 </body>
 
 </html>
