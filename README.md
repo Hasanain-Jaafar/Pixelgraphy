@@ -6,7 +6,8 @@
 Welcome to Pixelgraphy! This website is aimed at help all of those want to <br>
 <ol>
     <li> learn about photography</li>
-    <li> sharpen thier skills.</li>
+    <li> sharpen thier photography skills.</li>
+    <li> Having an account to communicate with other users .</li>
     <li> find photography products and gears.</li>
 </ol>
 Whether you're a photography enthusiast,Explore our Multipage Website for all things photography! Enjoy 
