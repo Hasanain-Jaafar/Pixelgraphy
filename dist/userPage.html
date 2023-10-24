@@ -20,7 +20,7 @@
   <title>community</title>
 </head>
 
-<body class="relative min-h-screen flex flex-col scroll-smooth bg-[#DDDDDD] font-Poppins">
+<body class=" min-h-screen flex flex-col scroll-smooth bg-[#DDDDDD] font-Poppins">
   <div id="navWrapper" class="w-full bg-cover bg-no-repeat bg-left pt-2">
     <nav
       class="w-full flex flex-row justify-between items-center mx-auto p-4 lg:w-3/4 lg:bg-gray-500 lg:bg-opacity-60 lg:rounded-md">
@@ -107,10 +107,10 @@
 
   <!-- >> main -->
 
-  <main class="container  h-[100vh] mx-auto mb-24 md:mt-5 left-enter-animate md:w-11/12 lg:w-9/12">
+  <main class="container mx-auto mb-24 md:mt-5 left-enter-animate md:w-11/12 lg:w-9/12">
     <div
-      class="relative w-11/12 h-[25%] object-cover flex items-center overflow-hidden mx-auto mb-4 z-0 md:h-[30%] md:w-[96%]">
-      <img src="./img/user-page/pagebg.jpg" alt="bgpage" class="w-full lg:mt-36">
+      class="relative w-11/12 h-[180px] object-cover flex items-center overflow-hidden mx-auto mb-4 z-0 md:h-[300px] md:w-[96%]">
+      <img src="./img/user-page/pagebg.jpg" alt="bgpage" class="w-full (lg:mt-36)">
       <!-- >> profile on small-screens and medium  -->
       <div class="lg:hidden">
         <div class="absolute right-2 top-2 md:right-8 flex gap-2 flex-col items-center">
@@ -128,7 +128,7 @@
       <div
         class="hidden md:w-1/4  rounded-md lg:block z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-600 via-blue-500 to-gray-700">
         <aside
-          class="bg-[#dddd] hidden items-center md:w-10/12 md:mx-auto rounded-lg mt-16  sticky top-16 left-0 md:flex flex-col ">
+          class="bg-[#dddd] hidden pb-4 mb-4 items-center md:w-10/12 md:mx-auto rounded-lg mt-16  sticky top-20 left-0 md:flex flex-col ">
           <div class="flex justify-center flex-col items-center">
             <div class="w-28 rounded-full border-2 border-gray-500 -mt-10 shadow-md">
               <img src="./img/user-page/photographer1.jpg" alt="user_pic" class="rounded-full object-cover ">
@@ -137,26 +137,49 @@
               <h2 class="text-center font-bold tracking-wider text-xl capitalize ">user name</h2>
             </div>
           </div>
-          <div>
-            <div class="pt-4 flex flex-col gap-4">
-              <p>Lorem ipsum dolor sit.</p>
-              <p>Lorem ipsum dolor sit.</p>
-              <p>Lorem ipsum dolor sit.</p>
-              <button class="border rounded-md py-1 px-4 mx-auto bg-slate-300 font-semibold">Read More</button>
-              <p>Lorem ipsum dolor sit.</p>
+          <div class="pt-2 px-4 flex flex-col w-full self-start">
+            <button
+              class="rounded-sm shadow-md px-2 py-0.5 text-base w-2/5 text-center text-gray-800 bg-[#d366007d]">Edit</button>
+            <div class="flex flex-col gap-4   mt-8">
+              <button id="userPhotosBtn"
+                class="bg-gray-400 rounded-sm py-2 text-lg font-semibold text-gray-800 px-4">Photos</button>
+              <div class="flex w-full items-center bg-gray-400 text-gray-800">
+                <p class=" py-2 px-4">Followers</p>
+                <span class="ml-auto pr-4">6</span>
+              </div>
+              <div class="flex w-full items-center bg-gray-400 text-gray-800">
+                <p class=" py-2 px-4">Following</p>
+                <span class="ml-auto pr-4">11</span>
+              </div>
             </div>
           </div>
+
         </aside>
       </div>
 
       <!-- ->> Article -->
       <article
-        class="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-blue-600 via-blue-500 to-gray-800 w-11/12 mx-auto z-10 rounded-md lg:w-3/4">
-        <div class="w-full h-[29%] object-contain flex items-center overflow-hidden rounded-md">
+        class="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-blue-600 via-blue-500 to-gray-800 text-white w-12/12 mx-auto z-10 rounded-md lg:w-3/4">
+        <div class="hidden w-full h-[15%] object-contain md:flex items-center overflow-hidden rounded-md">
           <img src="./img/user-page/user-page.jpg" alt="bg" class="w-full">
         </div>
-        <div class="flex justify-center mt-8 ">
-          <h1>Hello User-Name </h1>
+        <div id="welcomeMsg" class="flex flex-col justify-center pt-4">
+          <h1 class="text-2xl text-center font-semibold tracking-widest">Hello <span class="font-normal">User
+              Name</span> </h1>
+          <h2 class="text-lg text-center p-4">This is your profile page. you can see the progress you've made and manage
+            your project. </h2>
+        </div>
+        <div id="user_photos_container" class="hidden pt-8 left-enter-animate">
+          <h2 class="text-3xl text-center font-semibold tracking-widest">Your Photos </h2>
+          <div id="userPhotography" class="grid grid-cols-2 md:grid-cols-3 pt-4 gap-1 px-1 mb-4">
+            <img src="./img/user-page/user-photography/userphotography (1).jpg" alt="">
+            <img src="./img/user-page/user-photography/userphotography-(2).jpg" alt="">
+            <img src="./img/user-page/user-photography/userphotography-(3).jpg" alt="">
+            <img src="./img/user-page/user-photography/userphotography-(4).jpg" alt="">
+            <img src="./img/user-page/user-photography/userphotography-(5).jpg" alt="">
+            <img src="./img/user-page/user-photography/userphotography-(6).jpg" alt="">
+            <img src="./img/user-page/user-photography/userphotography-(7).jpg" alt="">
+          </div>
         </div>
       </article>
     </section>
@@ -238,6 +261,7 @@
     </div>
   </footer>
   <script src="main.js"></script>
+  <script src="userPage.js"></script>
 </body>
 
 </html>
