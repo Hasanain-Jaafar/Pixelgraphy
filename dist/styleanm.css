@@ -2,7 +2,7 @@
     animation: sing-up-animation 1.6s ease-in ;
 }
 .fad-in{
-    animation: sing-up-animation 1.6s ease-in ;
+    animation: sing-up-animation 2s ease-in ;
 }
 
 @keyframes sing-up-animation{
@@ -18,6 +18,10 @@
 
     }
 
+}
+.disappearing{
+    animation: disappear cubic-bezier(0.4, 0.09, 0, 1.75) 800ms ;
+    animation-delay: 100ms;
 }
 
 .left-enter-animate{
@@ -61,6 +65,21 @@
     100% {
         transform: translateX(0%);
         opacity: 100%;
+
+    }
+    
+}
+@keyframes disappear {
+
+    0% {
+        opacity: 100%;
+    }
+    33%{
+        opacity: 55%;
+    }
+    
+    100% {
+        opacity: 0%;
 
     }
     

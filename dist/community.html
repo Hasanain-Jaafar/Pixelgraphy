@@ -115,22 +115,23 @@
   </div>
 
   <div id="formWraper"
-    class="grid grid-cols-1 gap-x-2  justify-items-center lg:max-w-6xl mt-4 mb-10 mx-auto md:grid-cols-2">
+    class="grid grid-cols-1 gap-x-2 justify-items-center lg:max-w-6xl mt-4 mb-10 mx-auto md:grid-cols-2">
     <!-- >> Image Section <<-->
-    <div class="relative flex flex-col  px-2 justify-center items-center">
+    <div class="relative flex flex-col px-2 justify-center items-center">
       <div>
-        <img class="w-3/4 object-cover mx-auto md:w-full left-enter-animate" src="/dist/img/signupheader.jpg"
+        <img class="w-3/4 object-cover mx-auto md:w-full fad-in" src="/dist/img/signupheader.jpg"
           alt="person-holding-a-camera" />
       </div>
       <div
-        class="absolute top-0 left-2 right-2 bg-[#ADDFCA] bg-opacity-90 py-2 text-center mx-auto w-8/12 md:w-11/12 left-enter-animate">
+        class="absolute top-0 left-2 right-2 bg-[#ADDFCA] bg-opacity-90 py-2 text-center mx-auto w-8/12 md:w-11/12 fad-in">
         <h2 class="font-Kanit font-normal tracking-wide text-xl text-gray-700 md:text-2xl md:font-normal lg:4xl">
           Join Our awesome community
         </h2>
       </div>
     </div>
     <!-- >> The Form Section <<-->
-    <div class="w-full">
+    <div id="signinContainer" class=" hidden w-full mt-8"></div>
+    <div id="signupField" class="w-full">
       <div class="mt-1 mx-auto px-2 w-10/12">
         <h1 class="text-4xl font-Kanit font-[800] tracking-widest text-[#C23257] left-enter-animate">
           Sign Up
@@ -159,10 +160,16 @@
             class="rounded-sm bg-[#7FD1AE] bg-opacity-60 border border-gray-500 pl-2 h-8" />
         </div>
       </div>
-      <div id="terms" class="flex flex-row justify-center items-center mt-8 mx-auto px-2 w-10/12 left-enter-animate">
-        <input id="checkBox" type="checkbox" />
-        <label class="pl-2 font-Kanit font-light">I've read and agree with the terms of services
-        </label>
+      <div class="flex flex-col justify-center items-center mx-auto w-full">
+        <div id="terms" class="flex flex-row justify-center items-center mt-8 mx-auto px-2 w-11/12 left-enter-animate">
+          <input id="checkBox" type="checkbox" />
+          <label class="pl-2 font-Kanit font-light w-full lg:w-10/12">I've read and agree with the terms of services
+          </label>
+        </div>
+        <div class="flex justify-center pt-2  w-11/12 left-enter-animate">
+          <p>Already a member? </p>
+          <a id="signin" href="" class="text-blue-600 underline font-Poppins pl-2 font-semibold">Sign in</a>
+        </div>
       </div>
       <div>
         <a href="./userPage.html" class="flex justify-center items-center mt-8 left-enter-animate">
