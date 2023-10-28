@@ -115,36 +115,30 @@
   </div>
 
   <div id="formWraper"
-    class="grid grid-cols-1 gap-x-2 justify-items-center lg:max-w-6xl mt-4 mb-10 mx-auto md:grid-cols-2">
+    class="grid grid-cols-1 gap-x-2 justify-items-center lg:max-w-6xl mt-4 mb-10 md:mx-auto md:grid-cols-2">
     <!-- >> Image Section <<-->
-    <div class="relative flex flex-col px-2 justify-center items-center">
+    <div class=" hidden relative md:flex flex-col px-2 justify-center items-center">
       <div>
         <img class="w-3/4 object-cover mx-auto md:w-full fad-in" src="/dist/img/signupheader.jpg"
           alt="person-holding-a-camera" />
-      </div>
-      <div
-        class="absolute top-0 left-2 right-2 bg-[#ADDFCA] bg-opacity-90 py-2 text-center mx-auto w-8/12 md:w-11/12 fad-in">
-        <h2 class="font-Kanit font-normal tracking-wide text-xl text-gray-700 md:text-2xl md:font-normal lg:4xl">
-          Join Our awesome community
-        </h2>
       </div>
     </div>
     <!-- >> The Form Section <<-->
 
     <!-- ! Sign in  -->
     <div id="signinContainer" class=" hidden w-full mt-8">
-      <div class="flex items-center">
+      <div class="flex fad-in items-center">
         <a href="" id="backToSignup" class="flex cursor-pointer">
           <iconify-icon icon="eva:arrow-back-outline" width="30"></iconify-icon>
         </a>
-        <h3> Back to <u><b>Sign Up</b></u></h3>
+        <h3 class="pl-2"><u>Back to <i><b>Sign Up</b></u></i></h3>
       </div>
       <div class=" fad-in w-5/7 flex flex-col justify-center items-center gap-x-4 mx-auto mt-6 lg:w-5/6">
-        <div class="w-10/12 flex flex-col">
+        <div class="w-11/12 flex flex-col">
           <label class="font-Kanit pl-1">User Name</label>
           <input id="signin-user-name" class="rounded-sm bg-[#7FD1AE] bg-opacity-60 border border-gray-500 pl-2 h-8" />
         </div>
-        <div class="w-10/12 flex flex-col mt-4">
+        <div class="w-11/12 flex flex-col mt-4">
           <label class="font-Kanit pl-1">Password</label>
           <input id="signin-password" class="rounded-sm bg-[#7FD1AE] bg-opacity-60 border border-gray-500 pl-2 h-8" type="password" />
         </div>

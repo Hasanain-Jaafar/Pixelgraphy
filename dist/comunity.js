@@ -58,7 +58,7 @@ signInLnk.addEventListener('click', (e)=>{
   },500)
 });
 
-backToSignup.addEventListener('click', (e) =>{
+backToSignup.addEventListener('click', () =>{
   signinContainer.classList.add('disappearing')
   signUpFieldsWrapper.classList.rmove('hidden');
   signinContainer.classList.add('hidden');
