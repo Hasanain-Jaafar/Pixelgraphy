@@ -45,21 +45,24 @@ checkBox.addEventListener("change", () => {
       formWraper.remove();
       signupMsg.classList.remove("hidden");
       signupMsg.classList.add("flex");
+      // signupMsg.setTimeout(() => {
+      //   signupMsg.classList.add("disappearing");
+      // },1000);
     });
   }
 });
 
-signInLnk.addEventListener('click', (e)=>{
+signInLnk.addEventListener("click", (e) => {
   e.preventDefault();
-  signUpFieldsWrapper.classList.add('disappearing')
-  setTimeout(()=>{
-    signUpFieldsWrapper.classList.add('hidden');
-    signinContainer.classList.remove('hidden');
-  },500)
+  signUpFieldsWrapper.classList.add("disappearing");
+  setTimeout(() => {
+    signUpFieldsWrapper.classList.add("hidden");
+    signinContainer.classList.remove("hidden");
+  }, 500);
 });
 
-backToSignup.addEventListener('click', () =>{
-  signinContainer.classList.add('disappearing')
-  signUpFieldsWrapper.classList.rmove('hidden');
-  signinContainer.classList.add('hidden');
-})
+backToSignup.addEventListener("click", () => {
+  signinContainer.classList.add("disappearing");
+  signUpFieldsWrapper.classList.rmove("hidden");
+  signinContainer.classList.add("hidden");
+});
