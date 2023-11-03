@@ -20,7 +20,7 @@
   <title>community</title>
 </head>
 
-<body class=" min-h-screen flex flex-col scroll-smooth bg-[#DDDDDD] font-Poppins">
+<body class="relative min-h-screen flex flex-col scroll-smooth bg-[#DDDDDD] font-Poppins">
   <div id="navWrapper" class="w-full bg-cover bg-no-repeat bg-left pt-2">
     <nav
       class="w-full flex flex-row justify-between items-center mx-auto p-4 lg:w-3/4 lg:bg-gray-500 lg:bg-opacity-60 lg:rounded-md">
@@ -169,18 +169,39 @@
           <h2 class="text-lg text-center p-4">This is your profile page. you can see the progress you've made and manage
             your project. </h2>
         </div>
-        <div id="user_photos_container" class="hidden pt-8 left-enter-animate">
+        <div id="user_photos_container" class=" pt-8 left-enter-animate">
           <h2 class="text-3xl text-center font-semibold tracking-widest">Your Photos </h2>
-          <div id="userPhotography" class="grid grid-cols-2 md:grid-cols-3 pt-4 gap-1 px-1 mb-4">
-            <img src="./img/user-page/user-photography/userphotography (1).jpg" class="rounded-md" alt="city">
-            <img src="./img/user-page/user-photography/userphotography-(2).jpg" class="rounded-md" alt="statues">
-            <img src="./img/user-page/user-photography/userphotography-(3).jpg" class="rounded-md" alt="street-dance">
-            <img src="./img/user-page/user-photography/userphotography-(4).jpg" class="rounded-md" alt="train-station">
-            <img src="./img/user-page/user-photography/userphotography-(5).jpg" class="rounded-md" alt="city-view">
-            <img src="./img/user-page/user-photography/userphotography-(6).jpg" class="rounded-md" alt="musem">
-            <img src="./img/user-page/user-photography/userphotography-(7).jpg" class="rounded-md" alt="city-traffic">
+          <div id="userPhotography" class="grid grid-cols-2 md:grid-cols-4 pt-4 gap-1 px-1 mb-4">
+            <img src="./img/user-page/user-photography/userphotography (1).jpg" class="rounded-md w-44" alt="city">
+            <img src="./img/user-page/user-photography/userphotography-(2).jpg" class="rounded-md  w-44" alt="statues">
+            <img src="./img/user-page/user-photography/userphotography-(3).jpg" class="rounded-md  w-44" alt="street-dance">
+            <img src="./img/user-page/user-photography/userphotography-(4).jpg" class="rounded-md  w-44" alt="train-station">
+            <img src="./img/user-page/user-photography/userphotography-(5).jpg" class="rounded-md  w-44" alt="city-view">
+            <img src="./img/user-page/user-photography/userphotography-(6).jpg" class="rounded-md  w-44" alt="musem">
+            <img src="./img/user-page/user-photography/userphotography-(7).jpg" class="rounded-md  w-44" alt="city-traffic">
           </div>
         </div>
+        <!-- ->> Image Review Model-->
+        <div
+          class="modal fixed left-1/2 top-1/2 z-40 hidden w-10/12 -translate-x-1/2 -translate-y-1/2 rounded-md bg-slate-400 bg-opacity-90 px-2 md:w-3/4 lg:w-1/2 ">
+          <button
+            class="close-btn absolute right-2 top-2 h-8 w-8 rounded-sm p-0 text-center font-Poppins text-4xl font-thin leading-none">
+            &times;
+          </button> <br><br>         
+
+          <div class="py-5 flex flex-col items-center justify-center h-auto  ">
+            <img src="" alt="" class="w-full h-auto object-contain rounded-md md:drop-shadow-md md:w-10/12" />
+            <div class="flex  w-8/12 h-[100%] flex-col justify-evenly px-4 pt-4 md:px-2">
+              <span class="text-gray-900 font-Poppins text-sm">Date: sep-10-2023</span>
+              <span class="text-gray-900 font-Poppins text-sm">Location: HongKong</span>
+              <div class="flex flex-row items-end justify-start gap-4 pt-4 md:pt-8">
+                <span class="flex items-start justify-center gap-2"></span>
+                <span class="item-center flex justify-center gap-2"></span>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="overlay z-39 absolute left-0 top-0 hidden h-[100%] w-[100%] backdrop-blur-sm"></div>
       </article>
     </section>
 
@@ -260,8 +281,8 @@
       </div>
     </div>
   </footer>
-  <script src="main.js"></script>
-  <script src="userPage.js"></script>
+  <script src="main.js" defer></script>
+  <script src="userPage.js" defer></script>
 </body>
 
 </html>
