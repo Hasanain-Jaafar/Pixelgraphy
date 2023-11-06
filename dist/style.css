@@ -2078,6 +2078,26 @@ video {
     top: 50%;
   }
 
+  .md\:top-64 {
+    top: 16rem;
+  }
+
+  .md\:top-5 {
+    top: 1.25rem;
+  }
+
+  .md\:top-52 {
+    top: 13rem;
+  }
+
+  .md\:top-4 {
+    top: 1rem;
+  }
+
+  .md\:top-48 {
+    top: 12rem;
+  }
+
   .md\:order-2 {
     order: 2;
   }
@@ -2599,6 +2619,18 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:top-72 {
+    top: 18rem;
+  }
+
+  .xl\:top-8 {
+    top: 2rem;
+  }
+
+  .xl\:top-80 {
+    top: 20rem;
+  }
+
   .xl\:h-\[800px\] {
     height: 800px;
   }
@@ -2613,5 +2645,10 @@ video {
 
   .xl\:w-\[20\%\] {
     width: 20%;
+  }
+
+  .xl\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }
